@@ -3,3 +3,24 @@ body {
     color: white;
     font-family:'Courier New', Courier, monospace;
 }
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+/* visited link */
+a:visited {
+color: gray;
+}
+
+/* mouse over link */
+a:hover {
+color: darkgray;
+}
+
+/* selected link */
+a:active {
+color: slategray;
+}
