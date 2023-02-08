@@ -30,7 +30,7 @@ color: slategray;
   border: 1px solid gray;
   border-radius:10px;
   padding: 10px 5px 10px 5px;
-  background-color: #434141;
+  /* background-color: #434141; */
   /* color: #000000; */
   width: 300px
 }
