@@ -4,6 +4,10 @@ body {
     font-family:'Courier New', Courier, monospace;
 }
 
+#myDIV {
+  display: none;
+}
+
 /* unvisited link */
 a:link {
     color: white;
