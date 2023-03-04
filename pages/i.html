@@ -6,30 +6,13 @@
         <title>i</title>
         <link rel="stylesheet" href="../style/style.css" />
     </head>
-    <iframe src="../assets/OH, Hi There! - Bear in the Big Blue House.mp4"></iframe>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+    <video width="320" height="240" controls>
+      <source src="../assets/OH, Hi There! - Bear in the Big Blue House.mp4" type="video/mp4">
+    </video>
+  
+    <button onclick="myFunction()">CONTENT WARNING</button>
+
+    <div id="myDIV">
     <body>
         <h1 id="degenerate" title="d e g e n e r a t e">
             <a title="d e g e n e r a t e" href="#degenerate">
@@ -225,8 +208,21 @@
         <!--##########################################################################################################
         
         ###########################################################################################################-->
-        
-            <br /><hr />
+        </div>
+        <br /><hr />
         <a title="i want to go home" href="../index.html">home</a>
+
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+        </script>
+
+
     </body>
 </html>
