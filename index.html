@@ -18,20 +18,22 @@
             }
         };
 
-        document.getElementById('email').onkeydown = function(e){
-            if(e.keyCode == 13){
-                checkPswd();
+        function checkSubmit(e) {
+            if(e && e.keyCode == 13) {
+                document.forms[0].submit();
             }
-            };
+            }
     </script>
 </head>
 
 <body>
-    <form>
-        <label for="pswd">Password: </label>
-        <input type="password" id="pswd">
-        <input type="button" value="Submit" id="myBtn" onclick="checkPswd();" />
-    </form>
+    <div onKeyPress="return checkSubmit(event)">
+        <form>
+            <label for="pswd">Password: </label>
+            <input type="password" id="pswd">
+            <input type="button" value="Submit" id="myBtn" onclick="checkPswd();" />
+        </form>
+    </div>
 </body>
 
 </html>
