@@ -6,7 +6,7 @@
     <title>Login page</title>
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="icon" href="./public/favicon.ico" />
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         function checkPswd() {
             var confirmPassword = "grieve different";
             var password = document.getElementById("pswd").value;
@@ -23,10 +23,50 @@
                 document.forms[0].submit();
             }
             }
-    </script>
+    </script> -->
 </head>
 
-<body>
+
+  <body>
+    <form id="myForm">
+      <label for="input">Enter text:</label>
+      <input type="text" id="input" name="input">
+      <input type="submit" value="Submit">
+    </form>
+
+    <script>
+      const form = document.getElementById('myForm');
+      const password = 'grieve different'
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const input = document.getElementById('input');
+        const text = input.value.toLowerCase();
+        if (text.includes(password)) {
+          window.open("home/index.html", '_blank');
+        } else {
+          confirm("You clearly are snooping... " + input + " does not match actual password?");
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          const input = document.getElementById('input');
+          const text = input.value.toLowerCase();
+          if (text.includes(password)) {
+            window.open("home/index.html", '_blank');
+          } else {
+            confirm("You clearly are snooping... " + input + " does not match actual password?");
+          }
+        }
+      });
+    </script>
+  </body>
+
+
+
+<!-- <body>
     <div onKeyPress="return checkSubmit(event)">
         <form>
             <label for="pswd">Password: </label>
@@ -34,6 +74,6 @@
             <input type="button" value="Submit" id="myBtn" onclick="checkPswd();" />
         </form>
     </div>
-</body>
+</body> -->
 
 </html>
