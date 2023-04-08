@@ -17,7 +17,27 @@
       <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/262330576&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lil_peep" title="☆LiL PEEP☆" target="_blank" style="color: #cccccc; text-decoration: none;">☆LiL PEEP☆</a> · <a href="https://soundcloud.com/lil_peep/sets/hellboy" title="HELLBOY" target="_blank" style="color: #cccccc; text-decoration: none;">HELLBOY</a></div>
       <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/232663900&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lil_peep" title="☆LiL PEEP☆" target="_blank" style="color: #cccccc; text-decoration: none;">☆LiL PEEP☆</a> · <a href="https://soundcloud.com/lil_peep/sets/crybaby" title="crybaby" target="_blank" style="color: #cccccc; text-decoration: none;">crybaby</a></div>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0KFwPVjC5u7OmfEupdZpqoQSe0r-XNOC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br /><hr />
+      <div id="ghost">
+        <h2>Ghost Boy (Radio Edit)</h2>
+      </div>
+      
+      <script>
+      // Define an array of strings
+      const ghostString = "Leave me alone, just leave alone$I'm growin' so tired of this$How do you fight the feelin'?$How do you fight the feelin', this?$She callin' my phone, she callin' my phone$I put it on quiet quick$I ain't never gon' answer it$I ain't never gon' pick up my phone, girl$I'm all on my own, I'm all on my own$I know you ain't high as this$Puttin' my mind to this$Give me some time, I'll be flyin' this$Breakin' my bones, you breakin' my bones$You want me to line my wrist$I ain't gon' do it for you$I'm gon' do it for me, 'cause it help me forget$I ain't gon' do it for you$I'm gon' do it for me, 'cause I'm tryna get rich$I ain't gon' put on no Tommy$If I don't got Tommy to put on my this$Doin' my thing, now, this, I can sing$So don't expect all my flows, I just switch$Step in this this, let these those feel my drip$If you ain't thosein' on somethin', I'ma dip (skrt)$Leave me alone, just leave alone$I'm growin' so tired of this$How do you fight the feelin'?$How do you fight the feelin', this?$She callin' my phone, she callin' my phone$I put it on quiet quick$I ain't never gon' answer it$I ain't never gon' pick up my phone, girl$When you are on your own$Just know that I need you$I won't pick up the phone$Just know that I need you";
+      const stringArray = ghostString.split("$");
+
+      // Get the div element
+      const stringListDiv = document.getElementById('ghost');
+
+      // Loop through the array of strings and add each string to the div on a separate line
+      stringArray.forEach((string) => {
+        const stringElement = document.createElement('p');
+        stringElement.textContent = string;
+        stringListDiv.appendChild(stringElement);
+      });
+      </script>
+      
+      <br /><hr />
         <a title="i" href="skiprocks/skiprocks.github.io/pages/i.html">back to i</a>
     </body>
 </html>
